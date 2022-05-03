@@ -40,7 +40,10 @@ header {
     }
 }
 
-
+#grad {
+    background-image: linear-gradient(to bottom right,#10102e,
+    #0d4d28)
+}
 body {
     font-family: 'Goudy Bookletter 1911', serif;
     background-color: #908578;
