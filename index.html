@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="reset.css">
+
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho&family=Creepster&family=Goudy+Bookletter+1911&display=swap" rel="stylesheet">
+
+    <title>Luna Llena, cuentos de terror</title>
+</head>
+
+<body>
+    <div>
+        <header>
+
+            <a href="index.html">
+                <img id="icon" src="images/lupin.png" alt="logo" width="50px" height="50px">
+            </a>
+
+
+            <h1 class="titulo">
+                <div>
+                    Luna Llena</div>
+
+                <div>
+                    cuentos de terror</div>
+            </h1>
+
+            <h2>
+                <p>Si te apasionan los relatos de terror, y te cansaste de los clichés,
+                    este sitio es para vos. Aquí encontrarás cuentos frescos como la sangre.
+                </p>
+            </h2>
+        </header>
+        <h2 class="pie">
+            <p>
+            <div>
+                Forma parte de nuestra comunidad:</div>
+            <div>
+                Asustate con estos cuentos pero no temas compartir los tuyos: propagá el terror
+                haciendo click <a class="links" href="#share">aquí.</a></div>
+            <div>
+                Recibí tu dosis de horror semanal: suscribite a nustro <a class="links" href="#mail">newsletter.</a>
+            </div>
+            </p>
+        </h2>
+    </div>
+
+    <div>
+        <nav id="menu">
+            <!--
+            <h2> Menú</h2>
+            -->
+            <ul class="lista-uno">
+                <li> <a class="links" href="pages/cuentos.html">Cuentos</a>
+                </li>
+                <!-- sub-items 
+                <ul>
+                    <li>
+                        Propios
+                    </li>
+
+                    <li>
+                        Colaboraciones
+                    </li>
+
+                    <li>
+                        <a class="links" href="pages/creepypasta.html">Creepypastas</a>
+                    </li>
+
+                    <li>
+                        Leyendas
+                    </li>
+                </ul>
+-->
+                <li>
+                    <a class="links" href="#photo">Fotografía del díark</a>
+                </li>
+
+                <li>
+                    <a class="links" href="pages/contacto.html">Contacto</a>
+                </li>
+                <li>
+                    <a class="links" href="pages/quienes-somos.html">Quiénes somos</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <article>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Cantidad de palabras</th>
+                        <th>Audio disponible</th>
+                        <th>Tipo</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>El perro en el cementerio</td>
+                        <td>1993</td>
+                        <td>Sí</td>
+                        <td>Propio</td>
+                    </tr>
+                    <tr>
+                        <td>Mañana quizás</td>
+                        <td>1509</td>
+                        <td>Sí</td>
+                        <td>Colaboración</td>
+                    </tr>
+                    <tr>
+                        <td> <a class="links-cuento" href="pages/creepypasta.html">Tikytok</a>
+                        </td>
+                        <td>1111</td>
+                        <td>Sí</td>
+                        <td>Creepypasta</td>
+                    </tr>
+                    <tr>
+                        <td>La próxima clase</td>
+                        <td>1266</td>
+                        <td>No</td>
+                        <td>Propio</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <article>
+            <h4 id="share">
+                Propagá el miedo, compartí tu cuento</h4>
+
+            <ol>
+                <li>Abrí sesión con tu mail y contraseña</li>
+                <li>Escribí el título de tu cuento</li>
+                <li>Subí el archivo en el formato que prefieras</li>
+                <li>¡Listo! tu relato fue enviado</li>
+            </ol>
+
+            <form action="" class="form">
+                <div id="formulario">
+
+                    <div class="correo">
+                        <label for="">Mail</label>
+                    </div>
+                    <div class="">
+                        <input type="text">
+                    </div>
+                    <div>
+                        <div>
+                            <label for="">Contraseña</label>
+                        </div>
+                        <div>
+                            <input type="password">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="">Título</label>
+                        </div>
+                        <div>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+                <div id="tu-relato">
+                    <div>
+                        <label for="">Tu relato</label>
+                    </div>
+                    <div>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div>
+                    <input class="button" type="button" value="¡enviar!">
+                </div>
+            </form>
+            <div>
+                <p>¿No tenés cuenta? Registrate aquí </p>
+            </div>
+        </article>
+
+        
+        <article class="photo">
+            <h4 id="photo">Fotografía del díark</h4>
+            <img src="images/dark-forest.jpg" alt="bosque iluminado por Luna" width="400" height="400px">
+        </article>
+    </main>
+
+    <footer>
+        <article>
+            <h4 id="mail">
+                Suscribite a nuestro newsletter : "Dosis mortal de terror"
+
+            
+                <form action="">
+                    <label for="">Tu mail</label>
+                    <input type="text">
+
+                    <input type="button" value="enviar">
+                </form>
+
+            </h4>
+        </article>
+
+
+
+
+        <div class="redes">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="images/icon-facebook.png" alt="icon-facebook" width="30px" height="30px">
+            </a>
+
+            <a href="https://podcasts.google.com" target="_blank">
+                <img src="images/icon-podcast.png" alt="icon-podcast" width="30px" height="30px">
+            </a>
+
+            <a href="index.html">
+                <img src="images/lupin.png" alt="logo" width="50px" height="50px">
+            </a>
+
+            <a href="https://www.youtube.com" target="_blank">
+                <img src="images/icon-youtube.png" alt="icon-youtube" width="30px" height="30px">
+            </a>
+
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="images/icono-instagram.webp" alt="icono-instagram" width="30px" height="30px">
+            </a>
+
+        </div>
+
+        <a class="links" href="pages/normas-comun.html">Normas de la comunidad</a>
+        <a class="links" href="">Información sobre copyright</a>
+    </footer>
+</body>
+
+</html>
