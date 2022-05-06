@@ -65,46 +65,49 @@
         </h2>
     </div>
 
-    <div>
-        <nav id="menu">
-            <!--
-            <h2> Menú</h2>
-            -->
-            <ul class="lista-uno">
-                <li> <a class="links" href="pages/cuentos.html">Cuentos</a>
-                </li>
-                <!-- sub-items 
-                <ul>
-                    <li>
-                        Propios
+
+
+    <nav class="navbar navbar-justify-content-center navbar-light bg-success">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="pages/cuentos.html" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Cuentos
+                        </a>
+                        <ul class="dropdown-menu navbar-light bg-success" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Propios</a></li>
+
+                            <li><a class="dropdown-item" href="#">Colaboraciónes</a></li>
+
+                            <li><a class="dropdown-item" href="pages/creepypasta.html">Creepypastas</a></li>
+
+                            <li><a class="dropdown-item" href="#">Leyendas</a></li>
+                        </ul>
                     </li>
 
-                    <li>
-                        Colaboraciones
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#photo">Fotografía del Díark</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="pages/quienes-somos.html">Quiénes somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="pages/contacto.html">Contacto</a>
                     </li>
 
-                    <li>
-                        <a class="links" href="pages/creepypasta.html">Creepypastas</a>
-                    </li>
-
-                    <li>
-                        Leyendas
-                    </li>
                 </ul>
--->
-                <li>
-                    <a class="links" href="#photo">Fotografía del díark</a>
-                </li>
-
-                <li>
-                    <a class="links" href="pages/contacto.html">Contacto</a>
-                </li>
-                <li>
-                    <a class="links" href="pages/quienes-somos.html">Quiénes somos</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+            </div>
+        </div>
+    </nav>
 
     <main>
         <article>
@@ -120,7 +123,8 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row">El perro en el cementerio</th>
+                            <th scope="row">
+                                El perro en el cementerio</th>
                             <td>1993</td>
                             <td>Sí</td>
                             <td>Propio</td>
@@ -132,7 +136,9 @@
                             <td>Colaboración</td>
                         </tr>
                         <tr>
-                            <th scope="row">TikyTok</th>
+                            <th scope="row">
+                                <a class="links-cuento" href="pages/creepypasta.html">TikyTok</a>
+                            </th>
                             <td>1266</td>
                             <td>Sí</td>
                             <td>Creepypasta</td>
@@ -150,92 +156,56 @@
 
 
 
-        <article>
-            <h4 id="share">
-                Propagá el miedo, compartí tu cuento</h4>
+        <div class="container">
+            <div class="row">
+                <article class="col">
+                    <h4 id="share">
+                        Propagá el miedo, compartí tu cuento</h4>
 
-            <ol>
-                <li>Abrí sesión con tu mail y contraseña</li>
-                <li>Escribí el título de tu cuento</li>
-                <li>Subí el archivo en el formato que prefieras</li>
-                <li>¡Listo! tu relato fue enviado</li>
-            </ol>
+                    <ol>
+                        <li>Abrí sesión con tu mail y contraseña</li>
+                        <li>Escribí el título de tu cuento</li>
+                        <li>Subí el archivo en el formato que prefieras</li>
+                        <li>¡Listo! tu relato fue enviado</li>
+                    </ol>
 
-            <form action="" class="form">
-                <div id="formulario">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
 
-                    <div class="correo">
-                        <label for="">Mail</label>
-                    </div>
-                    <div class="">
-                        <input type="text">
-                    </div>
-                    <div>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+
+                        <div class="col-auto">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+
                         <div>
-                            <label for="">Contraseña</label>
+                            <label for="">Tu relato</label>
                         </div>
                         <div>
-                            <input type="password">
+                            <textarea name="" id="" cols="20" rows="1"></textarea>
                         </div>
-                    </div>
-                    <div>
-                        <div>
-                            <label for="">Título</label>
+
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Tu relato</label>
+                            <input class="form-control" type="file" id="formFile">
                         </div>
-                        <div>
-                            <input type="text">
-                        </div>
-                    </div>
-                </div>
-                <div id="tu-relato">
-                    <div>
-                        <label for="">Tu relato</label>
-                    </div>
-                    <div>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                    </div>
-                </div>
-                
-<button type="button" class="btn btn-success">¡enviar!</button>
-            </form>
-            <div>
-                <p>¿No tenés cuenta? Registrate aquí </p>
+                        <button type="button" class="btn btn-success">¡enviar!</button>
+
+                        <p>¿No tenés cuenta? Registrate aquí </p>
+                    </form>
+                </article>
+                <article class="col">
+                    <h4 id="photo">Fotografía del díark</h4>
+                    <img src="images/dark-forest.jpg" class="rounded" alt="bosque iluminado por Luna" width="400"
+                        height="400px">
+                </article>
+
             </div>
-        </article>
-
-        <article>
-            <form>
-                <div class="container"></div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                </div>
-                <div class="col-auto">
-                  <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-
-                <div>
-                    <label for="">Tu relato</label>
-                </div>
-                <div>
-                    <textarea name="" id="" cols="20" rows="1"></textarea>
-                </div>
-           
-            <div class="mb-3">
-                <label for="formFile" class="form-label">Default file input example</label>
-                <input class="form-control" type="file" id="formFile">
-              </div>
-              
-<button type="button" class="btn btn-success">¡enviar!</button>
-            </form>
-        </article>
-
-        <article class="photo">
-            <h4 id="photo">Fotografía del díark</h4>
-            <img src="images/dark-forest.jpg" alt="bosque iluminado por Luna" width="400" height="400px">
-        </article>
+        </div>
     </main>
 
     <footer>
@@ -248,34 +218,35 @@
                     <label for="">Tu mail</label>
                     <input type="text">
 
-                    <input type="button" value="enviar">
+                    <button type="button" class="btn btn-success">¡enviar!</button>
+
                 </form>
 
             </h4>
         </article>
 
-
-
+        <p class="frase">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Sunt voluptates nemo reprehende saepe </p>
 
         <div class="redes">
             <a href="https://www.facebook.com" target="_blank">
-                <img src="images/icon-facebook.png" alt="icon-facebook" width="30px" height="30px">
+                <img src="images/icon-facebook.png" alt="icon-facebook" width="50px" height="50px">
             </a>
 
             <a href="https://podcasts.google.com" target="_blank">
-                <img src="images/icon-podcast.png" alt="icon-podcast" width="30px" height="30px">
+                <img src="images/icon-podcast.png" alt="icon-podcast" width="50px" height="50px">
             </a>
 
-            <a href="index.html">
-                <img src="images/lupin.png" alt="logo" width="50px" height="50px">
+            <a id="icono" href="index.html">
+                <img src="images/lupin.png" alt="logo" width="100px" height="100px">
             </a>
 
             <a href="https://www.youtube.com" target="_blank">
-                <img src="images/icon-youtube.png" alt="icon-youtube" width="30px" height="30px">
+                <img src="images/icon-youtube.png" alt="icon-youtube" width="50px" height="50px">
             </a>
 
             <a href="https://www.instagram.com" target="_blank">
-                <img src="images/icono-instagram.webp" alt="icono-instagram" width="30px" height="30px">
+                <img src="images/icono-instagram.webp" alt="icono-instagram" width="50px" height="50px">
             </a>
 
         </div>
@@ -283,6 +254,8 @@
         <a class="links" href="pages/normas-comun.html">Normas de la comunidad</a>
         <a class="links" href="">Información sobre copyright</a>
     </footer>
+
+
 
     <!--link a bootstrap js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
