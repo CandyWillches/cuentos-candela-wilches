@@ -24,7 +24,7 @@ header {
 
 #icon {
     display: grid;
-    align-content:center ;
+    align-content: center;
     position: sticky;
     top: 10px;
 }
@@ -41,9 +41,10 @@ header {
 }
 
 #grad {
-    background-image: linear-gradient(to bottom right,#10102e,
-    #0d4d28)
+    background-image: linear-gradient(to bottom right, #10102e,
+            #0d4d28)
 }
+
 body {
     font-family: 'Goudy Bookletter 1911', serif;
     background-color: #908578;
@@ -58,6 +59,7 @@ body {
     padding-top: 5px;
     border-radius: 10px;
     font-weight: 200;
+    text-decoration: #000;
 
 }
 
@@ -158,8 +160,8 @@ body {
 }
 
 table {
-    padding: 50px;
-    text-align: center;
+    background-color: #6a6156;
+
 }
 
 .text {
@@ -198,6 +200,7 @@ footer {
 .titulo {
     font-size: 50px;
     font-family: 'Creepster', cursive;
+    text-decoration: #000;
 }
 
 nav {
