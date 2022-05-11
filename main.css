@@ -34,8 +34,9 @@ header {
     position: sticky;
     top: 10px;
 }
+
 .sub-icon {
-    
+
     display: grid;
     align-content: center;
 }
@@ -57,7 +58,8 @@ header {
 }
 
 body {
-    font-family: 'Goudy Bookletter 1911', serif; color: black;
+    font-family: 'Goudy Bookletter 1911', serif;
+    color: black;
     background-color: #908578;
     text-decoration: white;
 }
@@ -68,7 +70,7 @@ body {
     margin-top: 0px;
     margin-bottom: 5px;
     padding: 0px;
-    
+
     padding-bottom: 10px;
     border-radius: 10px;
     border-top-right-radius: 0%;
@@ -235,4 +237,34 @@ nav {
 
     position: relative;
     bottom: 350%;
+}
+
+.formu {
+    padding: 50px;
+    padding-top: 20px;
+}
+
+.formul {
+
+    display: grid;
+    animation-name: mail;
+    animation-duration: 4s;
+}
+
+
+@keyframes mail {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+#cards {
+    padding: 30px;
 }
