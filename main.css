@@ -1,8 +1,10 @@
 header {
     text-align: center;
     background-color: #10102e;
-    padding: 50px 100px;
+    padding: 100px 100px;
     border-radius: 10px;
+    border-end-end-radius: 0px;
+    border-radius: 0%;
     font-weight: 700;
     font-size: larger;
 
@@ -17,8 +19,6 @@ header {
 }
 
 .navbar {
-    margin-left: 50px;
-    margin-right: 50px;
     margin-bottom: 50px;
 }
 
@@ -33,6 +33,11 @@ header {
     align-content: center;
     position: sticky;
     top: 10px;
+}
+.sub-icon {
+    
+    display: grid;
+    align-content: center;
 }
 
 
@@ -52,20 +57,25 @@ header {
 }
 
 body {
-    font-family: 'Goudy Bookletter 1911', serif;
+    font-family: 'Goudy Bookletter 1911', serif; color: black;
     background-color: #908578;
-    text-decoration: #000;
+    text-decoration: white;
 }
 
 .pie {
     text-align: center;
     background-color: #161640;
     margin-top: 0px;
-    padding: 10px;
-    padding-top: 5px;
+    margin-bottom: 5px;
+    padding: 0px;
+    
+    padding-bottom: 10px;
     border-radius: 10px;
-    font-weight: 200;
+    border-top-right-radius: 0%;
+    border-top-left-radius: 0%;
+    font-weight: 200px;
     text-decoration: #000;
+
 
 }
 
