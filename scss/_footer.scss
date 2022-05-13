@@ -1,0 +1,42 @@
+footer {
+    text-align: center;
+    background-color: #1b1b37;
+    padding: 20px;
+    margin: 50px 0px 0px;
+    height: max-content;
+
+
+    #icono {
+        position: relative;
+        bottom: 60px;
+    }
+
+    .redes {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: $spacing3;
+    }
+
+    #mail {
+        padding: 15px;
+        text-align: left;
+        margin-top: 20px;
+        font-size: 28px;
+    }
+
+    .frase {
+        text-align: right;
+        font-size: 30px;
+        margin-left: 500px;
+        margin-bottom: $spacing1;
+        margin-top: $spacing3;
+        padding-top: $spacing3;
+
+        position: relative;
+        bottom: 350%;
+    }
+
+
+}

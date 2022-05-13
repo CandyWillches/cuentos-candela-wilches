@@ -1,0 +1,70 @@
+
+header {
+    text-align: center;
+    background-color: $color-primary;
+    padding: 100px 100px;
+    border-radius: 10px;
+    border-end-end-radius: $spacing3;
+    border-radius: $spacing3;
+    font-weight: 700;
+    font-size: larger;
+
+    font-weight: bold;
+    font-size: larger;
+
+    padding-bottom: 5px;
+    display: grid;
+    background-size: cover;
+    animation-name: animation;
+    animation-duration: 4s;
+
+    .titulo {
+        font-size: $spacing1;
+        font-family: 'Creepster', cursive;
+        text-decoration: #000;
+    }
+
+    #grad {
+        background-image: linear-gradient(to bottom right, #10102e,
+                #0d4d28)
+    }
+
+    .sub-icon {
+
+        display: grid;
+        align-content: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        header {
+            background-color: $color-secondary ;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        header {
+            background-color: $color-secondary;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+
+        header {
+            background-color: $color-primary;
+        }
+    }
+
+
+}
+
+
+@keyframes animation {
+    from {
+        background-color: yellowgreen;
+    }
+
+    to {
+        background-color: #1b1b37
+    }
+}
+

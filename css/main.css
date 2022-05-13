@@ -1,0 +1,135 @@
+footer {
+  text-align: center;
+  background-color: #1b1b37;
+  padding: 20px;
+  margin: 50px 0px 0px;
+  height: max-content; }
+  footer #icono {
+    position: relative;
+    bottom: 60px; }
+  footer .redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 0%; }
+  footer #mail {
+    padding: 15px;
+    text-align: left;
+    margin-top: 20px;
+    font-size: 28px; }
+  footer .frase {
+    text-align: right;
+    font-size: 30px;
+    margin-left: 500px;
+    margin-bottom: 50px;
+    margin-top: 0px;
+    padding-top: 0%;
+    position: relative;
+    bottom: 350%; }
+
+header {
+  text-align: center;
+  background-color: #1b1b37;
+  padding: 100px 100px;
+  border-radius: 10px;
+  border-end-end-radius: 0px;
+  border-radius: 0%;
+  font-weight: 700;
+  font-size: larger;
+  font-weight: bold;
+  font-size: larger;
+  padding-bottom: 5px;
+  display: grid;
+  background-size: cover;
+  animation-name: animation;
+  animation-duration: 4s; }
+  header .titulo {
+    font-size: 50px;
+    font-family: 'Creepster', cursive;
+    text-decoration: #000; }
+  header #grad {
+    background-image: linear-gradient(to bottom right, #10102e, #0d4d28); }
+  header .sub-icon {
+    display: grid;
+    align-content: center; }
+  @media screen and (min-width: 768px) {
+    header header {
+      background-color: #0d4d28; } }
+  @media screen and (max-width: 768px) {
+    header header {
+      background-color: #0d4d28; } }
+  @media screen and (min-width: 1024px) {
+    header header {
+      background-color: #1b1b37; } }
+
+@keyframes animation {
+  from {
+    background-color: yellowgreen; }
+  to {
+    background-color: #1b1b37; } }
+
+body {
+  font-family: 'Goudy Bookletter 1911', serif;
+  color: black;
+  background-color: #908578; }
+  body .links {
+    text-decoration: none;
+    color: #0d4d28; }
+  body .text {
+    margin: 50px;
+    font-family: 'Goudy Bookletter 1911', serif; }
+
+.pie {
+  text-align: center;
+  background-color: #1b1b37;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  padding: 0px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  border-top-right-radius: 0%;
+  border-top-left-radius: 0%;
+  font-weight: 200px;
+  text-decoration: #000; }
+  .pie #icon {
+    display: grid;
+    align-content: center;
+    position: sticky;
+    top: 10px; }
+
+.navbar {
+  margin-bottom: 50px; }
+
+.container {
+  padding-top: 50px; }
+  .container form {
+    margin-right: 50%; }
+
+table {
+  background-color: #6a6156; }
+  table .links-cuento {
+    text-decoration: none;
+    color: #000; }
+
+article {
+  padding-left: 50px; }
+  article .formu {
+    padding: 50px;
+    padding-top: 20px; }
+
+.formul {
+  margin-right: 60%;
+  display: grid;
+  animation-name: mail;
+  animation-duration: 4s; }
+
+@keyframes mail {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 0%;
+    width: 100%; } }
+
+#cards {
+  padding: 30px; }

@@ -1,0 +1,109 @@
+@import "footer";
+@import "header";
+
+
+//variables
+$color-primary: #1b1b37;
+$color-secondary: #0d4d28;
+
+$spacing1: 50px;
+$spacing2: 10px;
+$spacing3: 0px;
+
+body {
+    font-family: 'Goudy Bookletter 1911', serif;
+    color: black;
+    background-color: #908578;
+
+    .links {
+        text-decoration: none;
+        color: $color-secondary;
+    }
+
+    .text {
+        margin: $spacing1;
+        font-family: 'Goudy Bookletter 1911', serif;
+
+    }
+}
+
+.pie {
+    text-align: center;
+    background-color: $color-primary;
+    margin-top: $spacing3;
+    margin-bottom: 5px;
+    padding: $spacing3;
+
+    padding-bottom: $spacing2;
+    border-radius: $spacing2;
+    border-top-right-radius: $spacing3;
+    border-top-left-radius: $spacing3;
+    font-weight: 200px;
+    text-decoration: #000;
+
+    #icon {
+        display: grid;
+        align-content: center;
+        position: sticky;
+        top: $spacing2;
+    }
+}
+
+.navbar {
+    margin-bottom: $spacing1;
+}
+
+.container {
+    padding-top: $spacing1;
+
+
+    form {
+        margin-right: $spacing1;
+    }
+}
+
+
+table {
+    background-color: #6a6156;
+
+
+    .links-cuento {
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+
+article {
+    padding-left: $spacing1;
+
+    .formu {
+        padding: $spacing1;
+        padding-top: 20px;
+    }
+}
+
+.formul {
+    margin-right: 60%;
+    display: grid;
+    animation-name: mail;
+    animation-duration: 4s;
+
+    @keyframes mail {
+        from {
+            margin-left: 100%;
+            width: 300%
+        }
+
+        to {
+            margin-left: 0%;
+            width: 100%;
+        }
+
+    }
+}
+
+
+#cards {
+    padding: 30px;
+}
