@@ -23,7 +23,6 @@ body {
     .text {
         margin: $spacing1;
         font-family: 'Goudy Bookletter 1911', serif;
-
     }
 }
 
@@ -47,6 +46,12 @@ body {
         position: sticky;
         top: $spacing2;
     }
+}
+
+@mixin space-text {
+
+    text-decoration: #000;
+
 }
 
 .navbar {
@@ -80,6 +85,7 @@ article {
     .formu {
         padding: $spacing1;
         padding-top: 20px;
+        @extend .formul
     }
 }
 
@@ -106,4 +112,44 @@ article {
 
 #cards {
     padding: 30px;
+}
+
+$propuestas: (
+    color1: #d33737,
+    color2: #8e3939,
+    color3: #a52a2a,
+    color4: #7a2121,
+);
+
+@mixin botton-set {
+    border-radius: 50px;
+    font-family: 'Creepster', cursive;
+
+}
+
+.news {
+    list-style: none;
+    display: inline-block;
+    display: flex;
+    justify-content: space-evenly;
+
+    .btn-1 {
+        background-color: map-get($propuestas , color1);
+        @include botton-set
+    }
+
+    .btn-2 {
+        background-color: map-get($propuestas , color2);
+        @include botton-set
+    }
+
+    .btn-3 {
+        background-color: map-get($propuestas , color3);
+        @include botton-set
+    }
+
+    .btn-4 {
+        background-color: map-get($propuestas , color4);
+        @include botton-set
+    }
 }

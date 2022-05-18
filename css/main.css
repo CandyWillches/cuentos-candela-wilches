@@ -11,7 +11,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 0%; }
+    margin-top: 0px; }
   footer #mail {
     padding: 15px;
     text-align: left;
@@ -23,7 +23,7 @@ footer {
     margin-left: 500px;
     margin-bottom: 50px;
     margin-top: 0px;
-    padding-top: 0%;
+    padding-top: 0px;
     position: relative;
     bottom: 350%; }
 
@@ -33,8 +33,8 @@ header {
   padding: 100px 100px;
   border-radius: 10px;
   border-end-end-radius: 0px;
-  border-radius: 0%;
-  font-weight: 700;
+  border-radius: 0px;
+  font-weight: 700px;
   font-size: larger;
   font-weight: bold;
   font-size: larger;
@@ -87,8 +87,8 @@ body {
   padding: 0px;
   padding-bottom: 10px;
   border-radius: 10px;
-  border-top-right-radius: 0%;
-  border-top-left-radius: 0%;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
   font-weight: 200px;
   text-decoration: #000; }
   .pie #icon {
@@ -103,7 +103,7 @@ body {
 .container {
   padding-top: 50px; }
   .container form {
-    margin-right: 50%; }
+    margin-right: 50px; }
 
 table {
   background-color: #6a6156; }
@@ -117,7 +117,7 @@ article {
     padding: 50px;
     padding-top: 20px; }
 
-.formul {
+.formul, article .formu {
   margin-right: 60%;
   display: grid;
   animation-name: mail;
@@ -133,3 +133,25 @@ article {
 
 #cards {
   padding: 30px; }
+
+.news {
+  list-style: none;
+  display: inline-block;
+  display: flex;
+  justify-content: space-evenly; }
+  .news .btn-1 {
+    background-color: #d33737;
+    border-radius: 50px;
+    font-family: 'Creepster', cursive; }
+  .news .btn-2 {
+    background-color: #8e3939;
+    border-radius: 50px;
+    font-family: 'Creepster', cursive; }
+  .news .btn-3 {
+    background-color: #a52a2a;
+    border-radius: 50px;
+    font-family: 'Creepster', cursive; }
+  .news .btn-4 {
+    background-color: #7a2121;
+    border-radius: 50px;
+    font-family: 'Creepster', cursive; }
