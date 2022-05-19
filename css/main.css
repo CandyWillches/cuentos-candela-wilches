@@ -3,7 +3,8 @@ footer {
   background-color: #1b1b37;
   padding: 20px;
   margin: 50px 0px 0px;
-  height: max-content; }
+  height: max-content;
+  color: #fff; }
   footer #icono {
     position: relative;
     bottom: 60px; }
@@ -26,6 +27,8 @@ footer {
     padding-top: 0px;
     position: relative;
     bottom: 350%; }
+  footer .links {
+    font-size: x-large; }
 
 header {
   text-align: center;
@@ -34,8 +37,7 @@ header {
   border-radius: 10px;
   border-end-end-radius: 0px;
   border-radius: 0px;
-  font-weight: 700px;
-  font-size: larger;
+  margin-right: 0%;
   font-weight: bold;
   font-size: larger;
   padding-bottom: 5px;
@@ -71,13 +73,26 @@ header {
 body {
   font-family: 'Goudy Bookletter 1911', serif;
   color: black;
-  background-color: #908578; }
+  background-color: #908578;
+  margin-right: 0%;
+  font-size: larger; }
   body .links {
     text-decoration: none;
     color: #0d4d28; }
+    body .links:hover {
+      text-decoration: underline; }
   body .text {
     margin: 50px;
     font-family: 'Goudy Bookletter 1911', serif; }
+  body .redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 0px; }
+    body .redes .red:hover {
+      -webkit-transform: scale(1);
+      transform: scale(1.3);
+      transition: all .3s ease-in-out; }
 
 .pie {
   text-align: center;
@@ -99,6 +114,10 @@ body {
 
 .navbar {
   margin-bottom: 50px; }
+
+.card-title {
+  font-size: larger;
+  font-family: 'Creepster', cursive; }
 
 .container {
   padding-top: 50px; }
