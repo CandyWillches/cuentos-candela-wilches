@@ -3,8 +3,11 @@ footer {
   background-color: #1b1b37;
   padding: 20px;
   margin: 50px 0px 0px;
+  width: 100%;
+  margin-right: 0%;
   height: max-content;
-  color: #fff; }
+  color: #fff;
+  border: 0ch; }
   footer #icono {
     position: relative;
     bottom: 60px; }
@@ -21,12 +24,15 @@ footer {
   footer .frase {
     text-align: right;
     font-size: 30px;
-    margin-left: 500px;
+    margin-left: 50%;
     margin-bottom: 50px;
     margin-top: 0px;
     padding-top: 0px;
     position: relative;
     bottom: 350%; }
+    @media screen and (max-width: 768px) {
+      footer .frase .frase {
+        text-align: center; } }
   footer .links {
     font-size: x-large; }
 
@@ -38,6 +44,7 @@ header {
   border-end-end-radius: 0px;
   border-radius: 0px;
   margin-right: 0%;
+  border: 0ch;
   font-weight: bold;
   font-size: larger;
   padding-bottom: 5px;
@@ -75,7 +82,11 @@ body {
   color: black;
   background-color: #908578;
   margin-right: 0%;
-  font-size: larger; }
+  font-size: larger;
+  padding-right: 0%;
+  border-right: 0%;
+  margin-right: 0%;
+  border: 0ch; }
   body .links {
     text-decoration: none;
     color: #0d4d28; }
@@ -83,6 +94,7 @@ body {
       text-decoration: underline; }
   body .text {
     margin: 50px;
+    margin-right: 0%;
     font-family: 'Goudy Bookletter 1911', serif; }
   body .redes {
     display: flex;
@@ -100,6 +112,7 @@ body {
   margin-top: 0px;
   margin-bottom: 5px;
   padding: 0px;
+  padding-right: 5px;
   padding-bottom: 10px;
   border-radius: 10px;
   border-top-right-radius: 0px;

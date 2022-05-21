@@ -11,8 +11,11 @@ footer {
     background-color: #1b1b37;
     padding: 20px;
     margin: 50px 0px 0px;
+    width: 100%;
+    margin-right: 0%;
     height: max-content;
     color: #fff;
+    border: 0ch;
 
     #icono {
         position: relative;
@@ -37,14 +40,22 @@ footer {
     .frase {
         text-align: right;
         font-size: 30px;
-        margin-left: 500px;
+        margin-left: 50%;
         margin-bottom: $spacing1;
         margin-top: $spacing3;
         padding-top: $spacing3;
 
         position: relative;
         bottom: 350%;
+
+        @media screen and (max-width: 768px) {
+            .frase {
+                text-align: center;
+            }
+
+        }
     }
+
     .links {
         font-size: x-large;
     }
