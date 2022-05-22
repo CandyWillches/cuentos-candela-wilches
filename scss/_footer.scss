@@ -8,14 +8,16 @@ $spacing3: 0px;
 
 footer {
     text-align: center;
-    background-color: #1b1b37;
+    background-color: $color-primary;
+
     padding: 20px;
     margin: 50px 0px 0px;
     width: 100%;
     margin-right: 0%;
     height: max-content;
-    color: #fff;
+    color: whitesmoke;
     border: 0ch;
+    background-size: cover;
 
     #icono {
         position: relative;
@@ -30,30 +32,23 @@ footer {
         margin-top: $spacing3;
     }
 
+    article {
+        padding-left: 0%;
+    }
+
     #mail {
         padding: 15px;
         text-align: left;
-        margin-top: 20px;
+        margin-top: 10px;
         font-size: 28px;
     }
 
     .frase {
         text-align: right;
         font-size: 30px;
-        margin-left: 50%;
         margin-bottom: $spacing1;
         margin-top: $spacing3;
         padding-top: $spacing3;
-
-        position: relative;
-        bottom: 350%;
-
-        @media screen and (max-width: 768px) {
-            .frase {
-                text-align: center;
-            }
-
-        }
     }
 
     .links {

@@ -19,14 +19,11 @@ body {
     background-color: #908578;
     margin-right: 0%;
     font-size: larger;
-    padding-right: 0%;
-    border-right: 0%;
-    margin-right: 0%;
-    border: 0ch;
+    margin-right: 0px;
 
     .links {
         text-decoration: none;
-        color: $color-secondary;
+        color: #2b9a59;
 
         &:hover {
             text-decoration: underline;
@@ -75,7 +72,7 @@ body {
     border-top-right-radius: $spacing3;
     border-top-left-radius: $spacing3;
     font-weight: $espacio * 20;
-    text-decoration: #000;
+    color: whitesmoke;
 
     #icon {
         display: grid;

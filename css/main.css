@@ -6,8 +6,9 @@ footer {
   width: 100%;
   margin-right: 0%;
   height: max-content;
-  color: #fff;
-  border: 0ch; }
+  color: whitesmoke;
+  border: 0ch;
+  background-size: cover; }
   footer #icono {
     position: relative;
     bottom: 60px; }
@@ -16,29 +17,26 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 0px; }
+  footer article {
+    padding-left: 0%; }
   footer #mail {
     padding: 15px;
     text-align: left;
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 28px; }
   footer .frase {
     text-align: right;
     font-size: 30px;
-    margin-left: 50%;
     margin-bottom: 50px;
     margin-top: 0px;
-    padding-top: 0px;
-    position: relative;
-    bottom: 350%; }
-    @media screen and (max-width: 768px) {
-      footer .frase .frase {
-        text-align: center; } }
+    padding-top: 0px; }
   footer .links {
     font-size: x-large; }
 
 header {
   text-align: center;
   background-color: #1b1b37;
+  color: whitesmoke;
   padding: 100px 100px;
   border-radius: 10px;
   border-end-end-radius: 0px;
@@ -83,13 +81,10 @@ body {
   background-color: #908578;
   margin-right: 0%;
   font-size: larger;
-  padding-right: 0%;
-  border-right: 0%;
-  margin-right: 0%;
-  border: 0ch; }
+  margin-right: 0px; }
   body .links {
     text-decoration: none;
-    color: #0d4d28; }
+    color: #2b9a59; }
     body .links:hover {
       text-decoration: underline; }
   body .text {
@@ -118,7 +113,7 @@ body {
   border-top-right-radius: 0px;
   border-top-left-radius: 0px;
   font-weight: 200px;
-  text-decoration: #000; }
+  color: whitesmoke; }
   .pie #icon {
     display: grid;
     align-content: center;
