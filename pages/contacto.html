@@ -44,8 +44,7 @@
         </a>
         <h1 class="titulo">
             <p>
-                Luna Llena,
-                cuentos de terror
+                Luna Llena
             </p>
             Contacto
         </h1>
@@ -63,18 +62,26 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link active dropdown-toggle" href="cuentos.html" id="navbarDropdown" role="button"
+                        <a class="nav-link active dropdown-toggle" href="" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Cuentos
                         </a>
+
                         <ul class="dropdown-menu navbar-light bg-success" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Propios</a></li>
 
-                            <li><a class="dropdown-item" href="#">Colaboraciónes</a></li>
+                            <li><a class="dropdown-item" href="../pages/cuentos.html">Cuentos (all)</a></li>
 
-                            <li><a class="dropdown-item" href="creepypasta.html">Creepypastas</a></li>
+                            <li><a class="dropdown-item" href="../pages/cuentos-menu.html/propios.html">Propios</a></li>
 
-                            <li><a class="dropdown-item" href="#">Leyendas</a></li>
+                            <li><a class="dropdown-item"
+                                    href="../pages/cuentos-menu.html/colaboraciones.html">Colaboraciones</a></li>
+
+                            <li><a class="dropdown-item"
+                                    href="../pages/cuentos-menu.html/creepypastas.html">Creepypastas</a>
+                            </li>
+
+                            <li><a class="dropdown-item" href="../pages/cuentos-menu.html/leyendas.html">Leyendas</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -89,9 +96,16 @@
         </div>
     </nav>
 
-    <main>
+    <main class="text">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+            </ol>
+        </nav>
         <article>
-            <p class="text">
+            <p>
                 Podes contactarnos por mail@us.com y además, si sos de Bahía Blanca o la zona
                 te puede interesar el servicio que ofrecemos: narramos.
                 Nos apasiona inventar hustorias, escribirlas y mucho más compartirlas,
@@ -107,12 +121,14 @@
                 ferias y eventos bahienses, como "poesía en bahía" y aniversarios de la librería "la Masmédula",
                 entre otros.
             </p>
-            <p class="text">
+            <p>
                 Nos dedicamos a transmitir literatura así que nos encantaría que nos envíes
                 tu cuento; también podes contratarnos por mail, concursar en nustra búsqueda de talento
-                o aplicar para colaborar en nuestro podcast. ¡Animate!
+                o aplicar para colaborar en nuestro 
+                <a class="links" href="https://podcasts.google.com" target="_blank">podcast.
+                </a> ¡Animate!
             <ul class="news">
-                <button class="btn-1" type="imput">enviá tu cuento</button>
+                <button class="btn-1" type="imput">enviar cuento</button>
 
                 <button class="btn-2" type="imput">contratanos</button>
 

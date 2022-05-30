@@ -17,9 +17,8 @@ body {
     font-family: 'Goudy Bookletter 1911', serif;
     color: black;
     background-color: #908578;
-    margin-right: 0%;
     font-size: larger;
-    margin-right: 0px;
+    margin: 0px;
 
     .links {
         text-decoration: none;
@@ -31,8 +30,8 @@ body {
     }
 
     .text {
-        margin: $spacing1;
-        margin-right: 0%;
+        margin-left: 5%;
+        margin-right: 5%;
         font-family: 'Goudy Bookletter 1911', serif;
     }
 
@@ -56,7 +55,50 @@ body {
 
     }
 
+}
 
+.index {
+    font-size: xx-large;
+
+    header {
+        padding: 100px;
+        padding-bottom: 0px;
+
+        @media screen and (max-width: 768px) {
+            padding: 10px;
+            padding-bottom: 0px;
+
+        }
+    }
+
+    .h4i {
+        font-size: larger;
+    }
+
+    img.rounded {
+
+        @media only screen and (max-width: 768px) {
+
+            font-size: 250px;
+            height: 250px;
+
+        }
+
+
+    }
+}
+
+main .breadcrumb-item.active {
+    color: #000;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: #000;
+}
+
+.text a {
+    color: #072815;
+    text-decoration: none;
 }
 
 .pie {
@@ -118,31 +160,44 @@ article {
 
     .formu {
         padding: $spacing1;
+        padding-left: 0%;
+        padding-right: 0%;
         padding-top: 20px;
         @extend .formul
     }
 }
 
 .formul {
-    margin-right: 60%;
-    display: grid;
-    animation-name: mail;
-    animation-duration: 4s;
-
-    @keyframes mail {
-        from {
-            margin-left: 100%;
-            width: 300%
-        }
-
-        to {
-            margin-left: 0%;
-            width: 100%;
-        }
-
-    }
+    margin-right: 50%;
 }
 
+.text {
+
+
+    .gridd {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        @media only screen and (max-width: 768px) {
+
+            display: block;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+
+    }
+
+    div.col iframe {
+        @media only screen and (max-width: 768px) {
+            font-size: 300px;
+            height: 150px;
+            width: 250px;
+        }
+    }
+}
 
 #cards {
     padding: 30px;
@@ -185,6 +240,25 @@ $propuestas: (
     .btn-4 {
         background-color: map-get($propuestas , color4);
         @include botton-set
+    }
+
+}
+
+article {
+h5 {
+    text-decoration: underline;
+    margin-top: 50px;
+    font-weight: bold;
+}
+    p.cuenta {
+        text-align: left;
+        margin-top: 50px;
+    }
+
+    p.cuentb {
+        text-align: right;
+        
+        margin-top: 50px;
     }
 
 }

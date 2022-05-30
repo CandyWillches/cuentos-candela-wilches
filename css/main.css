@@ -37,7 +37,6 @@ header {
   text-align: center;
   background-color: #1b1b37;
   color: whitesmoke;
-  padding: 100px 100px;
   border-radius: 10px;
   border-end-end-radius: 0px;
   border-radius: 0px;
@@ -79,17 +78,16 @@ body {
   font-family: 'Goudy Bookletter 1911', serif;
   color: black;
   background-color: #908578;
-  margin-right: 0%;
   font-size: larger;
-  margin-right: 0px; }
+  margin: 0px; }
   body .links {
     text-decoration: none;
     color: #2b9a59; }
     body .links:hover {
       text-decoration: underline; }
   body .text {
-    margin: 50px;
-    margin-right: 0%;
+    margin-left: 5%;
+    margin-right: 5%;
     font-family: 'Goudy Bookletter 1911', serif; }
   body .redes {
     display: flex;
@@ -100,6 +98,32 @@ body {
       -webkit-transform: scale(1);
       transform: scale(1.3);
       transition: all .3s ease-in-out; }
+
+.index {
+  font-size: xx-large; }
+  .index header {
+    padding: 100px;
+    padding-bottom: 0px; }
+    @media screen and (max-width: 768px) {
+      .index header {
+        padding: 10px;
+        padding-bottom: 0px; } }
+  .index .h4i {
+    font-size: larger; }
+  @media only screen and (max-width: 768px) {
+    .index img.rounded {
+      font-size: 250px;
+      height: 250px; } }
+
+main .breadcrumb-item.active {
+  color: #000; }
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: #000; }
+
+.text a {
+  color: #072815;
+  text-decoration: none; }
 
 .pie {
   text-align: center;
@@ -142,21 +166,27 @@ article {
   padding-left: 50px; }
   article .formu {
     padding: 50px;
+    padding-left: 0%;
+    padding-right: 0%;
     padding-top: 20px; }
 
 .formul, article .formu {
-  margin-right: 60%;
-  display: grid;
-  animation-name: mail;
-  animation-duration: 4s; }
+  margin-right: 50%; }
 
-@keyframes mail {
-  from {
-    margin-left: 100%;
-    width: 300%; }
-  to {
-    margin-left: 0%;
-    width: 100%; } }
+.text .gridd {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
+  @media only screen and (max-width: 768px) {
+    .text .gridd {
+      display: block; } }
+  .text .gridd ul {
+    list-style-type: none; }
+
+@media only screen and (max-width: 768px) {
+  .text div.col iframe {
+    font-size: 300px;
+    height: 150px;
+    width: 250px; } }
 
 #cards {
   padding: 30px; }
@@ -182,3 +212,16 @@ article {
     background-color: #7a2121;
     border-radius: 50px;
     font-family: 'Creepster', cursive; }
+
+article h5 {
+  text-decoration: underline;
+  margin-top: 50px;
+  font-weight: bold; }
+
+article p.cuenta {
+  text-align: left;
+  margin-top: 50px; }
+
+article p.cuentb {
+  text-align: right;
+  margin-top: 50px; }
