@@ -44,22 +44,18 @@ header {
     }
 
     @media screen and (min-width: 768px) {
-        header {
-            background-color: $color-secondary ;
-        }
+        background-color: $color-secondary ;
+
     }
 
     @media screen and (max-width: 768px) {
-        header {
-            background-color: $color-secondary;
-        }
+        background-color: $color-secondary;
+
     }
 
     @media screen and (min-width: 1024px) {
+        background-color: $color-primary;
 
-        header {
-            background-color: $color-primary;
-        }
     }
 
 

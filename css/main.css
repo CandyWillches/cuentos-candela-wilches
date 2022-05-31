@@ -59,13 +59,13 @@ header {
     display: grid;
     align-content: center; }
   @media screen and (min-width: 768px) {
-    header header {
+    header {
       background-color: #0d4d28; } }
   @media screen and (max-width: 768px) {
-    header header {
+    header {
       background-color: #0d4d28; } }
   @media screen and (min-width: 1024px) {
-    header header {
+    header {
       background-color: #1b1b37; } }
 
 @keyframes animation {
@@ -156,11 +156,17 @@ main .breadcrumb-item.active {
   .container form {
     margin-right: 50px; }
 
-table {
-  background-color: #6a6156; }
-  table .links-cuento {
-    text-decoration: none;
-    color: #000; }
+main.text article {
+  padding-left: 0%; }
+  @media only screen and (max-width: 768px) {
+    main.text article {
+      margin-left: 0px;
+      padding-left: 0px; } }
+  main.text article table {
+    background-color: #6a6156; }
+    main.text article table .links-cuento {
+      text-decoration: none;
+      color: #000; }
 
 article {
   padding-left: 50px; }
@@ -184,7 +190,6 @@ article {
 
 @media only screen and (max-width: 768px) {
   .text div.col iframe {
-    font-size: 300px;
     height: 150px;
     width: 250px; } }
 
@@ -212,6 +217,11 @@ article {
     background-color: #7a2121;
     border-radius: 50px;
     font-family: 'Creepster', cursive; }
+  @media only screen and (max-width: 768px) {
+    .news {
+      margin-left: 0px;
+      padding-left: 0px;
+      display: block; } }
 
 article h5 {
   text-decoration: underline;
@@ -225,3 +235,9 @@ article p.cuenta {
 article p.cuentb {
   text-align: right;
   margin-top: 50px; }
+
+.reco-creep {
+  background-color: #d33737;
+  transform: rotate(15deg);
+  background-image: linear-gradient(to right, #10102e, #908578);
+  color: whitesmoke; }

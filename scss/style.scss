@@ -143,14 +143,22 @@ main .breadcrumb-item.active {
     }
 }
 
+main.text article {
+    padding-left: 0%;
 
-table {
-    background-color: #6a6156;
+    @media only screen and (max-width: 768px) {
 
+        margin-left: 0px;
+        padding-left: 0px;
+    }
 
-    .links-cuento {
-        text-decoration: none;
-        color: #000;
+    table {
+        background-color: #6a6156;
+
+        .links-cuento {
+            text-decoration: none;
+            color: #000;
+        }
     }
 }
 
@@ -192,7 +200,6 @@ article {
 
     div.col iframe {
         @media only screen and (max-width: 768px) {
-            font-size: 300px;
             height: 150px;
             width: 250px;
         }
@@ -242,14 +249,25 @@ $propuestas: (
         @include botton-set
     }
 
+
+
+
+    @media only screen and (max-width: 768px) {
+
+        margin-left: 0px;
+        padding-left: 0px;
+        display: block;
+    }
 }
 
+
 article {
-h5 {
-    text-decoration: underline;
-    margin-top: 50px;
-    font-weight: bold;
-}
+    h5 {
+        text-decoration: underline;
+        margin-top: 50px;
+        font-weight: bold;
+    }
+
     p.cuenta {
         text-align: left;
         margin-top: 50px;
@@ -257,8 +275,16 @@ h5 {
 
     p.cuentb {
         text-align: right;
-        
+
         margin-top: 50px;
     }
+
+}
+
+.reco-creep {
+    background-color: #d33737;
+    transform: rotate(15deg);
+    background-image: linear-gradient(to right, #10102e, #908578);
+    color: whitesmoke;
 
 }
