@@ -241,3 +241,10 @@ article p.cuentb {
   transform: rotate(15deg);
   background-image: linear-gradient(to right, #10102e, #908578);
   color: whitesmoke; }
+
+p.creepb {
+  text-align: right; }
+
+.slender {
+  position: relative;
+  left: 150px; }
