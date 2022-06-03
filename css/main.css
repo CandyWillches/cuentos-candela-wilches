@@ -222,10 +222,12 @@ article {
       padding-left: 0px;
       display: block; } }
 
-article h5 {
-  text-decoration: underline;
-  margin-top: 50px;
-  font-weight: bold; }
+article {
+  font-size: large; }
+  article h5 {
+    text-decoration: underline;
+    margin-top: 50px;
+    font-weight: bold; }
 
 article ul {
   list-style: none; }
