@@ -114,11 +114,13 @@ body {
     .index img.rounded {
       font-size: 250px;
       height: 250px; } }
+  .index .card-title {
+    font-size: larger;
+    font-family: 'Creepster', cursive; }
+  .index #cards {
+    padding: 30px; }
 
-main .breadcrumb-item.active {
-  color: #000; }
-
-.breadcrumb-item + .breadcrumb-item::before {
+main .breadcrumb-item.active, main .breadcrumb-item + .breadcrumb-item::before {
   color: #000; }
 
 .text a {
@@ -147,10 +149,6 @@ main .breadcrumb-item.active {
 .navbar {
   margin-bottom: 50px; }
 
-.card-title {
-  font-size: larger;
-  font-family: 'Creepster', cursive; }
-
 .container {
   padding-top: 50px; }
   .container form {
@@ -167,6 +165,10 @@ main.text article {
     main.text article table .links-cuento {
       text-decoration: none;
       color: #000; }
+  main.text article .t-moon {
+    font-size: 300px;
+    height: 300px;
+    border-radius: 20px; }
 
 article {
   padding-left: 50px; }
@@ -175,9 +177,9 @@ article {
     padding-left: 0%;
     padding-right: 0%;
     padding-top: 20px; }
-
-.formul, article .formu {
-  margin-right: 50%; }
+    @media only screen and (min-width: 768px) {
+      article .formu {
+        padding-right: 50%; } }
 
 .text .gridd {
   display: grid;
@@ -192,9 +194,6 @@ article {
   .text div.col iframe {
     height: 150px;
     width: 250px; } }
-
-#cards {
-  padding: 30px; }
 
 .news {
   list-style: none;
@@ -228,8 +227,40 @@ article h5 {
   margin-top: 50px;
   font-weight: bold; }
 
-.reco-creep {
-  background-color: #d33737;
+article ul {
+  list-style: none; }
+
+article .reco-creep {
   transform: rotate(15deg);
   background-image: linear-gradient(to right, #10102e, #908578);
-  color: whitesmoke; }
+  color: whitesmoke;
+  margin-top: 10%; }
+  article .reco-creep a {
+    color: #2b9a59; }
+
+article img.slend {
+  font-size: 300px;
+  height: 300px; }
+  @media screen and (max-width: 1024px) {
+    article img.slend {
+      font-size: 200px;
+      height: 200px; } }
+
+article img.majora {
+  font-size: 200px;
+  height: 300px; }
+  @media screen and (max-width: 1024px) {
+    article img.majora {
+      font-size: 100px;
+      height: 200px; } }
+
+article {
+  font-size: larger; }
+  @media screen and (max-width: 768px) {
+    article div.container img.img-box {
+      display: block;
+      height: 250px;
+      font-size: auto; } }
+  @media screen and (max-width: 768px) {
+    article div.container .row {
+      display: block; } }

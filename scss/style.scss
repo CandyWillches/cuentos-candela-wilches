@@ -86,6 +86,15 @@ body {
 
 
     }
+
+    .card-title {
+        font-size: larger;
+        font-family: 'Creepster', cursive;
+    }
+
+    #cards {
+        padding: 30px;
+    }
 }
 
 main .breadcrumb-item.active {
@@ -93,7 +102,7 @@ main .breadcrumb-item.active {
 }
 
 .breadcrumb-item+.breadcrumb-item::before {
-    color: #000;
+    @extend .breadcrumb-item.active
 }
 
 .text a {
@@ -129,10 +138,6 @@ main .breadcrumb-item.active {
     margin-bottom: $spacing1;
 }
 
-.card-title {
-    font-size: larger;
-    font-family: 'Creepster', cursive;
-}
 
 .container {
     padding-top: $spacing1;
@@ -160,6 +165,12 @@ main.text article {
             color: #000;
         }
     }
+
+    .t-moon {
+        font-size: 300px;
+        height: 300px;
+        border-radius: 20px;
+    }
 }
 
 
@@ -171,13 +182,13 @@ article {
         padding-left: 0%;
         padding-right: 0%;
         padding-top: 20px;
-        @extend .formul
+
+        @media only screen and (min-width: 768px) {
+            padding-right: 50%;
+        }
     }
 }
 
-.formul {
-    margin-right: 50%;
-}
 
 .text {
 
@@ -206,9 +217,6 @@ article {
     }
 }
 
-#cards {
-    padding: 30px;
-}
 
 $propuestas: (
     color1: #d33737,
@@ -270,10 +278,67 @@ article {
 
 }
 
-.reco-creep {
-    background-color: #d33737;
-    transform: rotate(15deg);
-    background-image: linear-gradient(to right, #10102e, #908578);
-    color: whitesmoke;
+article {
+    ul {
+        list-style: none;
+    }
 
+    .reco-creep {
+        transform: rotate(15deg);
+        background-image: linear-gradient(to right, #10102e, #908578);
+        color: whitesmoke;
+        margin-top: 10%;
+
+        a {
+            color: #2b9a59;
+        }
+    }
+
+    img.slend {
+        font-size: 300px;
+        height: 300px;
+
+        @media screen and (max-width: 1024px) {
+
+            font-size: 200px;
+            height: 200px;
+
+        }
+    }
+
+    img.majora {
+        font-size: 200px;
+        height: 300px;
+
+        @media screen and (max-width: 1024px) {
+
+            font-size: 100px;
+            height: 200px;
+
+        }
+    }
+}
+
+article {
+    font-size: larger;
+
+    div.container {
+
+        img.img-box {
+            @media screen and (max-width: 768px) {
+                display: block;
+
+                height: 250px;
+                font-size: auto;
+
+            }
+        }
+
+        .row {
+            @media screen and (max-width: 768px) {
+                display: block;
+            }
+        }
+
+    }
 }
